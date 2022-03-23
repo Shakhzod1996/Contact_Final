@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grid">
+    <div class="left-side">
+      <div class="container">
+        <h2>Add Contact</h2>
+
+        <form id="form">
+          <label for="name">Your Name:</label>
+          <input type="text" class="name" id="name" required>
+
+          <label for="surname">Your Surname:</label>
+          <input type="text" class="surname" id="surname" required>
+
+          <label for="number">Your Number:</label>
+          <input type="number" class="number" id="number" required>
+
+          <select id="select">
+            <option value="family">Family</option>
+            <option value="friends">Friends</option>
+            <option value="classmates">Classmates</option>
+            <option value="colleagues">Colleagues</option>
+          </select>
+
+          <button class="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="container2">
+        <h2>Contacts</h2>
+
+        <div class="family">
+          <div class="choose-btn">
+            <button class="all-btn">All</button>
+            <button class="family-btn">Family</button>
+            <button class="friend-btn">Friends</button>
+            <button class="clas-btn">Classmates</button>
+            <button class="colleg-btn">Collegues</button>
+          </div>
+
+          <ul class="family-ul-grid">
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
